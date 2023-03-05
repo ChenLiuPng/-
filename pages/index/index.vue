@@ -33,6 +33,51 @@
 		<view class="swiper">
 			<u-swiper :list="list1"></u-swiper>
 		</view>
+		<!-- 金刚区 -->
+		<view class="vajra">
+			<u-row justify="space-between" gutter="10">
+				<u-col span="2.4">
+					<view class="item">
+						<view class="img">
+							<image src="../../static/logo.png" mode=""></image>
+						</view>
+						<view class="text">水果蔬菜</view>
+					</view>
+				</u-col>
+				<u-col span="2.4">
+					<view class="item">
+						<view class="img">
+							<image src="../../static/logo.png" mode=""></image>
+						</view>
+						<view class="text">肉禽蛋品</view>
+					</view>
+				</u-col>
+				<u-col span="2.4">
+					<view class="item">
+						<view class="img">
+							<image src="../../static/logo.png" mode=""></image>
+						</view>
+						<view class="text">海鲜水产</view>
+					</view>
+				</u-col>
+				<u-col span="2.4">
+					<view class="item">
+						<view class="img">
+							<image src="../../static/logo.png" mode=""></image>
+						</view>
+						<view class="text">速食冷冻</view>
+					</view>
+				</u-col>
+				<u-col span="2.4">
+					<view class="item">
+						<view class="img">
+							<image src="../../static/logo.png" mode=""></image>
+						</view>
+						<view class="text">粮油米面</view>
+					</view>
+				</u-col>
+			</u-row>
+		</view>
 	</view>
 	</view>
 </template>
@@ -73,7 +118,35 @@
 		margin-top: 44px;
 		padding: 15rpx 26rpx;
 	}
-	.swiper{
-		padding:10rpx 25rpx 25rpx;
+
+	.swiper {
+		padding: 10rpx 25rpx 25rpx;
 	}
+	.vajra {
+		padding:10rpx 25rpx;
+	}
+	
+	    .item {
+	        height:163rpx;
+	        border-radius: 4px;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			.img {
+				height:108rpx;
+				width: 108rpx;
+				background:red;
+				border-radius: 50%;
+				margin-bottom:7rpx;
+				image {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			.text {
+				font-size: 24rpx;
+				color: #666666;
+			}
+	    }
 </style>
